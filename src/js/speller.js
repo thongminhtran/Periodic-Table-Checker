@@ -10,7 +10,7 @@ let elements = [];
 // Load periodic table data asynchronously
 async function loadPeriodicTable() {
 	try {
-		const response = await fetch("/periodic-table.json");
+		const response = await fetch(`${process.env.PUBLIC_URL}/periodic-table.json`);
 		if (!response.ok) {
 			throw new Error(`Network response was not ok: ${response.statusText}`);
 		}
@@ -24,35 +24,35 @@ async function loadPeriodicTable() {
 // Initialize data
 loadPeriodicTable();
 
-// Function to check if a word can be spelled with periodic table symbols
 function check(inputWord) {
-	const result = [];
-	let i = 0;
-
-	while (i < inputWord.length) {
-		let matchFound = false;
-		// Try to match the longest possible element symbol first
-		for (let j = 3; j > 0; j--) {
-			const symbol = inputWord.substring(i, i + j).toUpperCase();
-			const element = lookup(symbol);
-
-			if (Object.keys(element).length > 0) {
-				result.push(element);
-				i += j;
-				matchFound = true;
-				break;
-			}
-		}
-		if (!matchFound) {
-			// If no match is found, return an empty array
-			return [];
-		}
-	}
-	// Return the array of element objects if the word can be fully spelled
-	return result;
+	const result = findElements(inputWord.toLowerCase(), 0);
+	return result !== null ? result : [];
 }
 
-// Function to look up an element by its symbol
+function findElements(inputWord, index) {
+	if (index === inputWord.length) {
+		return []; // Successfully matched the entire word
+	}
+
+	for (let j = 3; j > 0; j--) {
+		const symbol = capitalize(inputWord.substring(index, index + j));
+		const element = lookup(symbol);
+
+		if (element && Object.keys(element).length > 0) {
+			const remainderResult = findElements(inputWord, index + j);
+			if (remainderResult !== null) {
+				return [element, ...remainderResult];
+			}
+		}
+	}
+
+	return null; // No valid element sequence found
+}
+
 function lookup(elementSymbol) {
 	return elements.find(el => el.symbol.toUpperCase() === elementSymbol.toUpperCase()) || {};
+}
+
+function capitalize(word) {
+	return word.charAt(0).toUpperCase() + word.slice(1);
 }
