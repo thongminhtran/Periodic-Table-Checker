@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/periodic-table-checker/static/css/main.dc83258d.css",
+    "main.js": "/periodic-table-checker/static/js/main.b2192410.js",
+    "static/js/453.4feb259f.chunk.js": "/periodic-table-checker/static/js/453.4feb259f.chunk.js",
+    "index.html": "/periodic-table-checker/index.html",
+    "main.dc83258d.css.map": "/periodic-table-checker/static/css/main.dc83258d.css.map",
+    "main.b2192410.js.map": "/periodic-table-checker/static/js/main.b2192410.js.map",
+    "453.4feb259f.chunk.js.map": "/periodic-table-checker/static/js/453.4feb259f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc83258d.css",
+    "static/js/main.b2192410.js"
+  ]
+}
