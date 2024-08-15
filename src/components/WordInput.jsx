@@ -8,7 +8,8 @@ function WordInput({ word, setWord, handleSpell }) {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                margin: '20px',
+                margin: '30px',
+                paddingBottom: '10px'
             }}
         >
             <Typography variant="h6" sx={{ marginBottom: '10px' }}>

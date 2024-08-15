@@ -1,7 +1,7 @@
 {
   "name": "periodic-table-checker",
   "version": "0.1.0",
-  "homepage": "https://thongminhtran.github.io/periodic-table-checker",
+  "homepage": "https://thongminhtran.github.io/Periodic-Table-Checker",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.0",

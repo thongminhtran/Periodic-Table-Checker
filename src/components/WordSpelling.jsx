@@ -9,7 +9,7 @@ function WordSpelling({ spelledWord }) {
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                minHeight: '80vh'
+                minHeight: '30vh'
             }}
         >
             <Grid container spacing={2} justifyContent="center">
