@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Periodic-Table-Checker/static/css/main.dc83258d.css",
-    "main.js": "/Periodic-Table-Checker/static/js/main.dae03ca3.js",
+    "main.css": "/Periodic-Table-Checker/static/css/main.fd48319c.css",
+    "main.js": "/Periodic-Table-Checker/static/js/main.fca2f875.js",
     "static/js/453.4feb259f.chunk.js": "/Periodic-Table-Checker/static/js/453.4feb259f.chunk.js",
     "index.html": "/Periodic-Table-Checker/index.html",
-    "main.dc83258d.css.map": "/Periodic-Table-Checker/static/css/main.dc83258d.css.map",
-    "main.dae03ca3.js.map": "/Periodic-Table-Checker/static/js/main.dae03ca3.js.map",
+    "main.fd48319c.css.map": "/Periodic-Table-Checker/static/css/main.fd48319c.css.map",
+    "main.fca2f875.js.map": "/Periodic-Table-Checker/static/js/main.fca2f875.js.map",
     "453.4feb259f.chunk.js.map": "/Periodic-Table-Checker/static/js/453.4feb259f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc83258d.css",
-    "static/js/main.dae03ca3.js"
+    "static/css/main.fd48319c.css",
+    "static/js/main.fca2f875.js"
   ]
 }
