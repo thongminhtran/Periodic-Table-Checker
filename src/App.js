@@ -3,7 +3,8 @@ import './App.css';
 import WordInput from './components/WordInput';
 import WordSpelling from './components/WordSpelling';
 import speller from './js/speller';
-import DigitalClock from "./js/Clock"; // Import your speller module
+import Clock from "./js/Clock"; // Import your speller module
+import DigitalClock from "./js/DigitalClock";
 import LoadingSpinner from './components/LoadingSpinner';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
                 loading ? <LoadingSpinner/> : <WordSpelling spelledWord={spelledWord}/>
             }
             <hr/>
+            <Clock/>
             <DigitalClock/>
         </div>
     );
