@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Periodic-Table-Checker/static/css/main.fd48319c.css",
-    "main.js": "/Periodic-Table-Checker/static/js/main.fca2f875.js",
+    "main.js": "/Periodic-Table-Checker/static/js/main.80a21648.js",
     "static/js/453.4feb259f.chunk.js": "/Periodic-Table-Checker/static/js/453.4feb259f.chunk.js",
     "index.html": "/Periodic-Table-Checker/index.html",
     "main.fd48319c.css.map": "/Periodic-Table-Checker/static/css/main.fd48319c.css.map",
-    "main.fca2f875.js.map": "/Periodic-Table-Checker/static/js/main.fca2f875.js.map",
+    "main.80a21648.js.map": "/Periodic-Table-Checker/static/js/main.80a21648.js.map",
     "453.4feb259f.chunk.js.map": "/Periodic-Table-Checker/static/js/453.4feb259f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fd48319c.css",
-    "static/js/main.fca2f875.js"
+    "static/js/main.80a21648.js"
   ]
 }
